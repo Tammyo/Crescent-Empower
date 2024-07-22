@@ -238,7 +238,7 @@ class _ApplyBoxState extends State<ApplyBox> {
               setState(() {
                 isSelected2 = !isSelected2;
               });
-            },
+            }
           ),
           boxContainer(
             'Web Dev intern',
@@ -250,7 +250,7 @@ class _ApplyBoxState extends State<ApplyBox> {
               setState(() {
                 isSelected3 = !isSelected3;
               });
-            },
+            }
           ),
           boxContainer(
             'Legal Practitioner Intern',
@@ -262,7 +262,7 @@ class _ApplyBoxState extends State<ApplyBox> {
               setState(() {
                 isSelected8 = !isSelected8;
               });
-            },
+            }
           ),
           boxContainer(
             'Digital Marketing Intern',
@@ -274,7 +274,7 @@ class _ApplyBoxState extends State<ApplyBox> {
               setState(() {
                 isSelected4 = !isSelected4;
               });
-            },
+            }
           ),
           boxContainer(
             'Building Construction Intern',
@@ -348,21 +348,21 @@ class _ApplyBoxState extends State<ApplyBox> {
             maxLines: 2,
             style: AppTextStyle.medium(
               deepBlue,
-            ),
+            )
           ),
           Text(
             text2,
             maxLines: 2,
             style: AppTextStyle.mediumSmall(
               skyBlue,
-            ),
+            )
           ),
           Text(
             text3,
             maxLines: 2,
             style: AppTextStyle.mediumSmall(
               skyBlue,
-            ),
+            )
           ),
           materialButton(
             text: 'Apply',
