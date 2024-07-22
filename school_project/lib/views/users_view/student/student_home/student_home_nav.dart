@@ -1,7 +1,6 @@
 import 'student_home_export.dart';
 import 'counseling_view/counseling_view.dart';
-
-
+import 'package:school_project/views/users_view/student/student_home/career_path/career_path.dart';
 
 
 int selectedIndexView = 0;
@@ -10,6 +9,7 @@ List<Widget> navViews = [
   const Career(),
   const Internship(),
   const NewTips(),
+  const CareerPath(),
 ];
 
 class StudentHomeNav extends StatefulWidget {
@@ -35,11 +35,11 @@ class _StudentHomeNavState extends State<StudentHomeNav> {
                 child: GNav(
                   rippleColor: whiteColor,
                   hoverColor: whiteColor,
-                  gap: 8,
+                  gap: 3,
                   activeColor: deepBlue,
                   iconSize: 24,
                   padding:
-                      const EdgeInsets.symmetric(horizontal: 20, vertical: 12),
+                      const EdgeInsets.symmetric(horizontal: 15, vertical: 12),
                   duration: const Duration(milliseconds: 400),
                   tabBackgroundColor: whiteColor,
                   color: skyBlue,
@@ -63,6 +63,11 @@ class _StudentHomeNavState extends State<StudentHomeNav> {
                       icon: Icons.book_outlined,
                       iconColor: whiteColor,
                       text: 'New & Tips',
+                    ),
+                    GButton(
+                      icon: Icons.chrome_reader_mode_outlined,
+                      iconColor: whiteColor,
+                      text: 'Career',
                     ),
                   ],
                   selectedIndex: selectedIndexView,

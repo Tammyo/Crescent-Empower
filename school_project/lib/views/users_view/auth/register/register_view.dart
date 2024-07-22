@@ -26,7 +26,7 @@ class RegisterView extends StatelessWidget {
         child: Column(
           children: [
             Flexible(
-                flex: 4,
+                flex: 3,
                 child: Container(
                   width: 100.w,
                   height: 100.h,
@@ -37,7 +37,7 @@ class RegisterView extends StatelessWidget {
                     children: [
                       Image.asset(
                         "asset/amico.png",
-                        width: 50.sp,
+                        width: 40.sp,
                         // fit: BoxFit.cover,
                       ),
                       AppText.normalText(
@@ -50,7 +50,7 @@ class RegisterView extends StatelessWidget {
                   ),
                 )),
             Flexible(
-                flex: 6,
+                flex: 7,
                 child: Container(
                   width: 100.w,
                   height: 100.h,
@@ -78,7 +78,16 @@ class RegisterView extends StatelessWidget {
                         ),
                         TextInput(
                           textInput: TextEditingController(),
-                          hintText: 'User Email',
+                          hintText: 'Student Email',
+                          borderColor: whiteColor,
+                          inputColor: whiteColor,
+                        ),
+                        SizedBox(
+                          height: 3.h,
+                        ),
+                        TextInput(
+                          textInput: TextEditingController(),
+                          hintText: 'Student Id',
                           borderColor: whiteColor,
                           inputColor: whiteColor,
                         ),
@@ -87,7 +96,7 @@ class RegisterView extends StatelessWidget {
                         ),
                         TextInput(
                           textInput: RegisterInput.userName,
-                          hintText: 'User Name',
+                          hintText: 'Student Name',
                           borderColor: whiteColor,
                           inputColor: whiteColor,
                         ),

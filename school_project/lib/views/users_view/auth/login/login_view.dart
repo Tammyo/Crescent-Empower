@@ -37,15 +37,15 @@ class LoginView extends StatelessWidget {
                     children: [
                       Image.asset(
                         "asset/amico.png",
-                        width: 50.sp,
+                        width: 45.sp,
                         // fit: BoxFit.cover,
                       ),
-                       AppText.normalText(
-                              'Crescent Empower',
-                              AppTextStyle.bold(
-                                deepBlue,
-                              ),
-                              1),
+                      AppText.normalText(
+                          'Crescent Empower',
+                          AppTextStyle.bold(
+                            deepBlue,
+                          ),
+                          1),
                     ],
                   ),
                 )),
@@ -77,8 +77,17 @@ class LoginView extends StatelessWidget {
                           height: 3.h,
                         ),
                         TextInput(
+                          textInput: TextEditingController(),
+                          hintText: 'Student Id',
+                          borderColor: whiteColor,
+                          inputColor: whiteColor,
+                        ),
+                        SizedBox(
+                          height: 3.h,
+                        ),
+                        TextInput(
                           textInput: LoginInput.userName,
-                          hintText: 'User Name',
+                          hintText: 'Student Name',
                           borderColor: whiteColor,
                           inputColor: whiteColor,
                         ),
@@ -105,9 +114,7 @@ class LoginView extends StatelessWidget {
                           width: 80.w,
                           height: 8.h,
                         ),
-                        SizedBox(
-                          height: 3.h,
-                        ),
+                        SizedBox(height: 3.h),
                         GestureDetector(
                           onTap: () {
                             navigateTo(const RegisterView());
@@ -127,7 +134,8 @@ class LoginView extends StatelessWidget {
                               whiteColor,
                             ),
                           ),
-                        )
+                        ),
+                        SizedBox(height: 3.h),
                       ],
                     ),
                   )),

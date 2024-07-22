@@ -1,14 +1,4 @@
-import 'package:flutter/material.dart';
-import 'package:school_project/views/widgets/bar.dart';
-import 'package:responsive_sizer/responsive_sizer.dart';
-import 'package:school_project/views/widgets/buttons.dart';
-import 'package:school_project/views/widgets/app_text.dart';
-import 'package:school_project/views/constant/navigation.dart';
-import 'package:school_project/views/constant/app_colors.dart';
-import 'package:school_project/views/constant/app_text_style.dart';
-import 'package:school_project/controllers/arrays_controls/counsellor_control.dart';
-import 'package:school_project/views/users_view/student/student_home/select_date.dart';
-
+import 'export_counseling.dart';
 class Counseling extends StatelessWidget {
   const Counseling({super.key});
 
@@ -22,9 +12,7 @@ class Counseling extends StatelessWidget {
         child: SingleChildScrollView(
           child: Column(
             children: [
-              SizedBox(
-                  width: 100.w,
-                  child: barWidget('Counselling Section')),
+              SizedBox(width: 100.w, child: barWidget('Counselling Section')),
               SizedBox(
                 width: 100.w,
                 child: AppText.overFlowText(
@@ -74,6 +62,7 @@ class CounsellorNames extends StatefulWidget {
 
 class _CounsellorNamesState extends State<CounsellorNames> {
   List<bool> _isCheckedList = [];
+
 
   @override
   void initState() {

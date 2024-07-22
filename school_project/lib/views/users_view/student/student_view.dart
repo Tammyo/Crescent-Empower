@@ -42,12 +42,6 @@ class StudentView extends StatelessWidget {
                     color: deepBlue,
                   )),
             ),
-            showList(
-                'Chat with us',
-                Icon(
-                  Icons.arrow_circle_right_outlined,
-                  color: deepBlue,
-                )),
           ],
         ),
       ),

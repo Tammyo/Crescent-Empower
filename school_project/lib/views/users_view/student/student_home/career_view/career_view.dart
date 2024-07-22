@@ -1,13 +1,5 @@
-import 'package:flutter/material.dart';
-import 'package:school_project/views/widgets/bar.dart';
-import 'package:responsive_sizer/responsive_sizer.dart';
-import 'package:school_project/views/widgets/buttons.dart';
-import 'package:school_project/views/widgets/app_text.dart';
-import 'package:school_project/views/constant/navigation.dart';
-import 'package:school_project/views/constant/app_colors.dart';
-import 'package:school_project/views/constant/app_text_style.dart';
-import 'package:school_project/controllers/arrays_controls/counsellor_control.dart';
-import 'package:school_project/views/users_view/student/student_home/select_date.dart';
+import 'export_career.dart';
+
 
 class Career extends StatelessWidget {
   const Career({Key? key}) : super(key: key);
@@ -22,9 +14,7 @@ class Career extends StatelessWidget {
         child: SingleChildScrollView(
           child: Column(
             children: [
-              SizedBox(
-                  width: 100.w,
-                  child: barWidget('Choose Counsellor')),
+              SizedBox(width: 100.w, child: barWidget('Choose Counsellor')),
               SizedBox(
                 width: 100.w,
                 child: AppText.overFlowText(
@@ -75,6 +65,7 @@ class CounsellorNames extends StatefulWidget {
 class _CounsellorNamesState extends State<CounsellorNames> {
   List<bool> _isCheckedList = [];
 
+
   @override
   void initState() {
     super.initState();
@@ -92,10 +83,7 @@ class _CounsellorNamesState extends State<CounsellorNames> {
             int indexArray = index;
             return Container(
               decoration: BoxDecoration(
-                border: Border.all(
-                  color: skyBlue,
-                  width: 0.06.dp
-                ),
+                border: Border.all(color: skyBlue, width: 0.06.dp),
                 borderRadius: BorderRadius.circular(10.sp),
               ),
               margin: EdgeInsets.only(top: 2.h),
@@ -120,13 +108,12 @@ class _CounsellorNamesState extends State<CounsellorNames> {
                   activeColor: deepBlue,
                   checkColor: whiteColor,
                   onChanged: (value) {
-                      setState(() {
+                    setState(() {
                       for (int i = 0; i < _isCheckedList.length; i++) {
                         _isCheckedList[i] = false;
                       }
                       _isCheckedList[index] = value!;
                     });
-
                   },
                 ),
               ),
