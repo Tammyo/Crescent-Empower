@@ -29,11 +29,11 @@ class StudentView extends StatelessWidget {
                   Icon(
                     Icons.arrow_circle_right_outlined,
                     color: deepBlue,
-                  )),
+                  ))
             ),
             GestureDetector(
               onTap: () {
-                navigateTo(const ScheduleNav(),);
+                navigateTo(const ScheduleNav());
               },
               child: showList(
                   'Schedules Info',
