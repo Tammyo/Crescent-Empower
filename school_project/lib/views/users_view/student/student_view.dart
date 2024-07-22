@@ -33,7 +33,7 @@ class StudentView extends StatelessWidget {
             ),
             GestureDetector(
               onTap: () {
-                navigateTo(const ScheduleNav());
+                navigateTo(const ScheduleNav(),);
               },
               child: showList(
                   'Schedules Info',
